@@ -1,4 +1,44 @@
-.footer{
-  margin-left : 80px;
-  font-size : 18px;
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  column-gap: 1em;
+}
+.grid-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item#heroes {
+  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-item#villains {
+  justify-content: left;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.score {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.char {
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid lightgrey;
+  background-position: center;
+  width: 70%;
+  text-align: center;
+}
+.strength {
+  text-align: center;
+  font-size: 3em;
+}
+span {
+  line-height: 4px;
+  text-align: center;
 }
